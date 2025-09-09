@@ -1,4 +1,4 @@
-interface Notifier {
+/*interface Notifier {
     void sendEmail(String to, String subject, String body);
     void sendSms(String phone, String text);
     void sendPush(String deviceToken, String msg);
@@ -15,3 +15,4 @@ class SmsOnlyNotifier implements Notifier {
         throw new UnsupportedOperationException("SMS only");
     }
 }
+*/
