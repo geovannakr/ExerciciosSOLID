@@ -33,7 +33,6 @@ class InvoiceService {
         }
     }
     void sendEmail(Invoice inv) {
-        // Legacy: SMTP inline (pretend)
         System.out.println("Email sent to " + inv.getCustomerEmail());
     }
 }

@@ -1,3 +1,5 @@
+import java.util.List;
+
 class Invoice {
     private final String id;
     private final String customerEmail;
@@ -11,6 +13,9 @@ class Invoice {
 }
 
 class InvoiceService {
+    public InvoiceService(InvoiceCalculator calculator, InvoiceNotifier notifier, InvoiceRepository repository) {
+        //TODO Auto-generated constructor stub
+    }
     double calculateTotal(java.util.List<Double> items, double tax) {
         double sum = 0;
         for (Double i : items) sum += i;
@@ -29,5 +34,9 @@ class InvoiceService {
     void sendEmail(Invoice inv) {
         // Legacy: SMTP inline (pretend)
         System.out.println("Email sent to " + inv.getCustomerEmail());
+    }
+    public Invoice creatInvoice(String string, String string2, List<Double> items, double tax) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'creatInvoice'");
     }
 }
