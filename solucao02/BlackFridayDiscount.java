@@ -1,4 +1,4 @@
-package solucaoExercicio02;
+package solucao02;
 
 public class BlackFridayDiscount implements DiscountCalculator{
     public double applyDiscount(double amount) {
